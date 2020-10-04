@@ -1,0 +1,271 @@
+* {
+  margin: 7px;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+.letra {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+body {
+  background-image: url(/images/backcubo.jpg);
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  text-shadow: 0.1em 0.1em 0.2em black;
+  border-radius: 10px;
+  letter-spacing: 12px;
+  font-family: "Sansita Swashed", cursive;
+  color: orangered;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logoimg {
+  width: 100px;
+  height: 100px;
+}
+
+.logoimg:hover {
+  transition: 0.5s;
+  transform: rotate(360deg);
+}
+
+.nav {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background: orangered;
+  color: white;
+}
+
+/* index */
+.inicio {
+  display: flex;
+  flex: 1;
+  background: #000;
+}
+
+.inicio-container {
+  background-image: url(/images/bannercubo.jpg);
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio-container ul li {
+  list-style: none;
+}
+.parrafo {
+  color: white;
+  background-color: hsla(239, 59%, 70%, 0.555);
+  padding: 18px;
+}
+
+.letra2 {
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: xx-large;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  background: teal;
+  padding: 18px;
+}
+.button:hover {
+  background: #32e0c4;
+  color: white;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/* cubos */
+
+.seccion-cubos {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.articulos {
+  height: auto;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.article {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.image img {
+  width: 300px;
+  height: 300px;
+}
+.image img:hover {
+  background: #32e0c4;
+  color: white;
+}
+
+.shadow {
+  letter-spacing: 2px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+/* contacto */
+
+.contacto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto-contenido {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+form {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  background-color: hsla(162, 59%, 70%, 0.555);
+}
+
+.field {
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+}
+.accion li {
+  list-style: none;
+}
+
+.formulario {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+/* footer */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: aliceblue;
+  align-items: center;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0%;
+}
+
+.sociales {
+  font-size: 23px;
+}
+
+.social ul li {
+  list-style: none;
+}
+
+.social ul li a {
+  color: white;
+}
+.social ul {
+  display: flex;
+  flex-direction: row;
+}
+
+@media all and (max-width: 1400px) {
+  .articulos {
+    flex-flow: row wrap;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .articulos {
+    flex-direction: column;
+  }
+  .image img {
+    width: 211px;
+    height: 211px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .articulos {
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
