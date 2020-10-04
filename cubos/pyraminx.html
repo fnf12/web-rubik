@@ -8,7 +8,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0,
     maximun-scale=1.0, minimum-scale=1.0"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap"
       rel="stylesheet"
@@ -22,52 +22,44 @@
     <!-- Header -->
     <header class="header">
       <div class="menu">
-        <a href="index.html" class="logo"> <h2>Mundo Rubik</h2></a>
-        <img class="logoimg" src="images/logo.png" alt="rubik" />
+        <a href="../index.html" class="logo"> <h2>Mundo Rubik</h2></a>
+        <img class="logoimg" src="../images/logo.png" alt="rubik" />
         <nav class="nav letra shadow">
-          <a href="index.html">Inicio</a>
-          <a href="cubos.html">Cubos</a>
-          <a href="contact.html">Contacto</a>
+          <a href="../index.html">Inicio</a>
+          <a href="../cubos.html">Cubos</a>
+          <a href="../contact.html">Contacto</a>
         </nav>
       </div>
     </header>
 
-    <!-- seccion contacto -->
-    <section class="contacto">
-      <div class="contacto-contenido">
-        <h3 class="letra shadow">Formulario de contacto:</h3>
-        <form method="post" action="#">
-          <div class="field letra">
-            <label for="name">Name:</label>
-            <input class="formulario" type="text" name="name" id="name" />
+    <!-- videos tutoriales -->
+    <section class="seccion-cubos">
+      <div class="articulos">
+        <div class="article">
+          <h3 class="letra shadow">2x2</h3>
+          <div class="image">
+            <iframe class="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/f85wqJTIDlw"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
           </div>
-          <div class="field letra">
-            <label for="email">Email:</label>
-            <input class="formulario" type="text" name="email" id="email" />
-          </div>
-          <div class="field letra">
-            <label for="message">Mensage:</label>
-            <textarea class="formulario" name="message" rows="3"></textarea>
-          </div>
-          <ul class="accion">
-            <li>
-              <input type="submit" value="Enviar Mensage" class="mensage" />
-            </li>
-          </ul>
-        </form>
-      </div>
-      <div class="contacto-contenido">
-        <h3 class="letra shadow">Direccion:</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7125983173783!2d-58.56892918420457!3d-34.63670246675238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f0bdad169f%3A0xeca0753c86fb8a48!2sMERCADO%20CUBOS!5e0!3m2!1ses-419!2sar!4v1601540571612!5m2!1ses-419!2sar"
-          width="340"
-          height="300"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
+        </div>
+        <div class="article">
+          <h3 class="letra shadow">3x3</h3>
+          <div class="image">
+            <iframe class="video" 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/GyY0OxDk5lI" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+            ></iframe>  
+        </div>
       </div>
     </section>
   </body>
